@@ -18,16 +18,17 @@ body{
 .ingreso {
     display: inline-block;
     width: 60%;
-
-    margin: 240px;
+    text-align: center;
+    padding: 4em;
 
 }
 .ingresoTexto{
     border:none;
     font-size: 20px;
     color:#0A3871;
-    background-color: #F3F5FC;
+    background-color: #F3F5FC   ;
     resize: none;
+    word-break:break-all;
     
 
 
