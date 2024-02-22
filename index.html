@@ -8,19 +8,36 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <header>
         <h3 class="tituloPrincipal">Encriptador</h3>
     </header>
 
     <main>
-        <section>
-            <div class="ingreso">
-                <textarea class="ingresoTexto" name="textarea" rows="10" cols="50" required>Escribe el texto que quieres encriptar aqui</textarea>
+        <section name="ingreso-botones">
+        <div class="ingreso">
+            <textarea class="ingresoTexto" name="textarea" rows="10" cols="50"
+                placeholder="Escribe el texto que quieres encriptar aqui." required></textarea>
+        </div>
+        <div class="botones">
+            <button class="boton-enciptar">Encriptar</button>
+            <button class="boton-desenciptar">Desencriptar</button>
 
-            </div>
-        </section>
+        </div>
+    </section>
+    <section name="codificado-copia">
+        <div class="egreso">
+            <textarea class="egresoTexto" name="textarea2" rows="10" cols="30"
+                placeholder="aqui egreso" required></textarea>
+
+
+        </div>
+
+    </section>
+
+
 
 
 
