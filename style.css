@@ -113,19 +113,45 @@ textarea{
 
                                     /* egreso */
 
+.mensaje-desencriptado{
+    display: none;
+}
+
+.sin-texto-desencriptado{
+    display: inline-block;
+    width: 30%;
+    background-color: #ffffff;
+    border-color: #052051;
+    border-radius: 10px;
+}
+.sin-texto-desencriptado .imgnigma {
+    width: 50%;
+    padding: 3em;
+}
+.sin-texto-desencriptado p, .sin-texto-desencriptado h1{
+    text-align: center;
+    margin: 0 1em 2em
+}
+
+.sin-texto-desencriptado h1{
+    font-size: 2em;
+    color: black;
+    }
+
+.msj-sintexto{
+    font-size: 1.5em;
+    color:#495057;
+}
+
 .mensaje-desencriptado textarea:focus, .mensaje-desencriptado textarea:active, .mensaje-desencriptado textarea{
     resize: none;
     word-break:break-all;
 }
-
 .botones-copiar{
     padding: 1em;
 }
 
-
-
                                     /*fin egreso*/
-
 
                                     /* footer */
 footer {
@@ -158,6 +184,7 @@ footer {
 .nombreJconivit {
     font-size: 1.5em;
     padding: 10px;
+    border-radius: 10px
 }
 
                                     /* fin footer*/
