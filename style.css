@@ -24,13 +24,13 @@ textarea{
     padding: 1em 1.2em; 
 }
 
-.texto-codificar{
+.caja-codificar{
     display: inline-block;
     width: 50%;
     text-align: center;
     
 }
-.texto-codificar textarea:focus, .texto-codificar textarea:active, .texto-codificar textarea{
+.caja-codificar textarea:focus, .texto-codificar textarea:active, .texto-codificar textarea{
     font-size: 20px;
     color:#0A3871;
     background-color: #F3F5FC;
@@ -188,3 +188,22 @@ footer {
 }
 
                                     /* fin footer*/
+
+
+                                    /*Responsive*/
+
+@media screen and (max-width:480px){
+    .caja-codificar{
+        display: block;
+        width: 90%;
+    }
+    /*.texto-codificar textarea {
+        
+    }*/
+
+    .sin-texto-desencriptado{
+        display: block;
+        width: 90%;
+    }
+
+}
