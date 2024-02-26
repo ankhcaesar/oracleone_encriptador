@@ -21,16 +21,22 @@ textarea{
     border: none;
     outline: none;
     border-radius: 10px;
-    padding: 1em 1.2em; 
-}
-
-.caja-codificar{
-    display: inline-block;
-    width: 50%;
-    text-align: center;
     
 }
-.caja-codificar textarea:focus, .texto-codificar textarea:active, .texto-codificar textarea{
+
+.encriptar{
+    display: inline-block;
+    width: 50%;
+
+    text-align: center;
+}
+.texto-encriptar textarea{
+    width: 90%;
+    height: 18em;
+
+}
+
+.texto-encriptar textarea:focus, .texto-encriptar textarea:active, .texto-encriptar textarea{
     font-size: 20px;
     color:#0A3871;
     background-color: #F3F5FC;
@@ -193,7 +199,7 @@ footer {
                                     /*Responsive*/
 
 @media screen and (max-width:480px){
-    .caja-codificar{
+    .texto-encriptar{
         display: block;
         width: 90%;
     }
