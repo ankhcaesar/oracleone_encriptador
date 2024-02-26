@@ -202,17 +202,15 @@ footer {
     header {
         padding: 1em;
     }
-
-
+    .tituloPrincipal{
+        font-size: 4em;
+        font-weight: 500;
+    }
     .encriptar{
         display: block;
         width: 90%;
         
     }
-    /*.texto-codificar textarea {
-        
-    }*/
-
     .sin-texto-desencriptado{
         display: block;
         width: 90%;
