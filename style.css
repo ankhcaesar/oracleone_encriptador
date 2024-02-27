@@ -21,19 +21,15 @@ textarea{
     border: none;
     outline: none;
     border-radius: 10px;
-    
 }
-
 .encriptar{
     display: inline-block;
     width: 50%;
-
     text-align: center;
 }
 .texto-encriptar textarea{
     width: 90%;
     height: 18em;
-
 }
 
 .texto-encriptar textarea:focus, .texto-encriptar textarea:active, .texto-encriptar textarea{
@@ -44,8 +40,7 @@ textarea{
     word-break:break-all;
 }
 
-
-.mensaje-desencriptado{
+.desencriptado{
     display: inline-block;
     width: 40%;
     text-align: center;
@@ -119,27 +114,27 @@ textarea{
 
                                     /* egreso */
 
-.mensaje-desencriptado{
+.desencriptado{
     display: none;
 }
 
-.sin-texto-desencriptado{
+.sndesencriptado{
     display: inline-block;
     width: 30%;
     background-color: #ffffff;
     border-color: #052051;
     border-radius: 10px;
 }
-.sin-texto-desencriptado .imgnigma {
+.sndesencriptado .imgnigma {
     width: 50%;
     padding: 3em;
 }
-.sin-texto-desencriptado p, .sin-texto-desencriptado h1{
+.sndesencriptado p, .sndesencriptado h1{
     text-align: center;
     margin: 0 1em 2em
 }
 
-.sin-texto-desencriptado h1{
+.sndesencriptado h1{
     font-size: 2em;
     color: black;
     }
@@ -149,7 +144,7 @@ textarea{
     color:#495057;
 }
 
-.mensaje-desencriptado textarea:focus, .mensaje-desencriptado textarea:active, .mensaje-desencriptado textarea{
+.mensajedesencriptado textarea:focus, .desencriptado textarea:active, .desencriptado textarea{
     resize: none;
     word-break:break-all;
 }
@@ -215,11 +210,11 @@ footer {
         
         
     }
-    .sin-texto-desencriptado{
+    .sndesencriptado{
         display: block;
         width: 100%;
     }
-    .encriptar, .mensaje-desencriptado, .sin-texto-desencriptado,.tituloPrincipal, footer{
+    .encriptar, .desencriptado, .sndesencriptado,.tituloPrincipal, footer{
         margin-left: auto;
         margin-right: auto; 
     }
