@@ -207,21 +207,21 @@ footer {
     .tituloPrincipal{
         font-size: 4em;
         font-weight: 700;
-    }
-
-    .encriptar, .mensaje-desencriptado, .sin-texto-desencriptado, footer{
-        margin-left: auto;
-        margin-right: auto; 
+        width: 90%;
     }
     .encriptar{
         display: block;
-        width: 90%;
+        width: 100%;
         
         
     }
     .sin-texto-desencriptado{
         display: block;
-        width: 90%;
+        width: 100%;
+    }
+    .encriptar, .mensaje-desencriptado, .sin-texto-desencriptado,.tituloPrincipal, footer{
+        margin-left: auto;
+        margin-right: auto; 
     }
 
 }
