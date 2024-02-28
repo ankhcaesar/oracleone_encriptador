@@ -1,35 +1,63 @@
 const matriz = [
-    ["a", "ai"],
-    ["e", "enter"],
-    ["i", "imes"],
-    ["o", "ober"],
-    ["u", "ufat"],
+    ['e', 'enter'],
+    ['i', 'imes'],
+    ['a', 'ai'],
+    ['o', 'ober'],
+    ['u', 'ufat'],
 ];
 
-const campoTexto = document.querySelector("#ta-texto-encriptar");
-const msj = document.querySelector("#ta-texto-desencriptado");
-console.log(campoMensaje, campoTexto)
+const taEncript = document.querySelector("#ta-texto-encriptar");
+const msjEncript = document.querySelector("#ta-texto-desencriptado");
+
 
 
 
 /**botones */
 function botonencriptado(){
-
+    mostrartextodesencriptado();
+    const texto1 = encriptar(taEncript.value);
+    msjEncript.value = texto1;
+    
 }
 
 function botondesencriptar(){
+    const texto2 = desencriptar(taEncript.value);
+    msjEncript.value = texto2;
+
 
 }
 
 function botoncopiar(){
-navigator.clipboard.writeText(campoMensaje);
+navigator.clipboard.writeText(msjEncript.value);
 }
 
 /** funciones varias */
 
-function encriptar(mensaje) {
-    
+function encriptar(mensajeDesen) {
+    for (let i = 0; i < matriz.length; i++) {
+        if (mensajeDesen.includes(matriz[i][0])) {
+            mensajeDesen = mensajeDesen.replaceAll(
+                matriz[i][0],
+                matriz[i][1]
+                );
+        }
+    }
+    return mensajeDesen;
 }
+
+function desencriptar(mensajeenc) {
+    for (let i = 0; i < matriz.length; i++) {
+        if (mensajeenc.includes(matriz[i][1])) {
+            mensajeenc = mensajeenc.replaceAll(
+                matriz[i][1],
+                matriz[i][0]
+                );
+        }
+    }
+    return mensajeenc;
+}
+
+
 
 function mostrartextodesencriptado(){
     document.getElementsByClassName("desencriptado")[0].style.display = "inline-block";
