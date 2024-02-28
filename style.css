@@ -6,7 +6,6 @@ header {
     text-align: center;
     padding: 5em;
 }
-
 .tituloPrincipal {
     font-family: "Kode Mono", monospace;
     width: 100%;
@@ -36,7 +35,7 @@ textarea{
 .texto-encriptar textarea:focus, .texto-encriptar textarea:active, .texto-encriptar textarea{
     font-size: 20px;
     color:#0A3871;
-    /*background-color: #F3F5FC;*/
+    background-color: #F3F5FC;
     resize: none;
     word-break:break-all;
 }
@@ -111,10 +110,8 @@ textarea{
 
 /* sin mensaje a ecriptar */
 .sndesencriptado{
-    display: none;
-    /* colocar al terminar
+
     display: inline-block;
-    */
     width: 30%;
     background-color: #ffffff;
     border-color: #052051;
@@ -145,10 +142,8 @@ textarea{
 /*seccion desencriptado con texto*/
 
 .desencriptado{
-/* colocar al terminar
     display: none;
-*/
-    display: inline-block;
+
     width: 30%;
     text-align: center;
 }
@@ -210,9 +205,13 @@ footer {
 
                                     /*Responsive*/
 
-@media screen and (max-width:480px){
+@media screen and (max-width:768px){
+    .boton-copiar{
+    margin-top: 3em;
+}
+}
 
-
+@media screen and (max-width:480px){    
     header {
         padding: 1em;
     }
@@ -221,17 +220,11 @@ footer {
         font-weight: 700;
         width: 90%;
     }
-    .encriptar{
+
+.encriptar, .desencriptado, .sndesencriptado, header, footer{
+    box-sizing: border-box;
         display: block;
         width: 100%;
-        
-        
-    }
-    .sndesencriptado{
-        display: block;
-        width: 100%;
-    }
-    .encriptar, .desencriptado, .sndesencriptado,.tituloPrincipal, footer{
         margin-left: auto;
         margin-right: auto; 
     }
