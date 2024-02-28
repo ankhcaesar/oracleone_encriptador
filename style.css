@@ -222,7 +222,7 @@ footer {
         width: 90%;
     }
 
-.encriptar, .desencriptado, header, footer{
+.encriptar, .sndesencriptado, header, footer{
     box-sizing: border-box;
         display: block;
         width: 100%;
