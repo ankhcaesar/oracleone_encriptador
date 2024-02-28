@@ -54,7 +54,7 @@ textarea{
     color: white;
     width: 12em;
     cursor: pointer;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     margin: 0 1em;
     text-align: center;
     text-decoration: none;
@@ -111,7 +111,10 @@ textarea{
 
 /* sin mensaje a ecriptar */
 .sndesencriptado{
+    display: none;
+    /* colocar al terminar
     display: inline-block;
+    */
     width: 30%;
     background-color: #ffffff;
     border-color: #052051;
@@ -142,7 +145,7 @@ textarea{
 /*seccion desencriptado con texto*/
 
 .desencriptado{
-/*
+/* colocar al terminar
     display: none;
 */
     display: inline-block;
@@ -151,13 +154,12 @@ textarea{
 }
 
 .texto-desencriptar textarea {
-    padding: 1em 1.5em;
     width: 80%;
     height: 28em;
+    padding: 1em 1.5em;
 }
 
 .texto-desencriptar textarea:focus, .texto-desencriptar textarea:active, .texto-desencriptar textarea{
-    
     resize: none;
     word-break:break-all;
 }
