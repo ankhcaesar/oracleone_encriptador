@@ -7,7 +7,7 @@ const matriz = [
 ];
 
 const campoTexto = document.querySelector("#ta-texto-encriptar");
-const campoMensaje = document.querySelector("#ta-texto-desencriptado");
+const msj = document.querySelector("#ta-texto-desencriptado");
 console.log(campoMensaje, campoTexto)
 
 
@@ -26,6 +26,11 @@ navigator.clipboard.writeText(campoMensaje);
 }
 
 /** funciones varias */
+
+function encriptar(mensaje) {
+    
+}
+
 function mostrartextodesencriptado(){
     document.getElementsByClassName("desencriptado")[0].style.display = "inline-block";
     document.getElementsByClassName("sndesencriptado")[0].style.display = "none";
