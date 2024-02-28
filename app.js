@@ -6,4 +6,7 @@ const matriz = [
     ["u", "ufat"],
 ];
 
+let campoTexto = document.querySelector("#ta-texto-encriptar");
+let campoMensaje = document.querySelector("#ta-texto-desencriptado");
+console.log(campoMensaje, campoTexto)
 
