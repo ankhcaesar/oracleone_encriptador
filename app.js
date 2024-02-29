@@ -1,3 +1,6 @@
+const taEncript = document.querySelector("#ta-texto-encriptar");
+const msjEncript = document.querySelector("#ta-texto-desencriptado");
+
 const matriz = [
     ['e', 'enter'],
     ['i', 'imes'],
@@ -5,9 +8,6 @@ const matriz = [
     ['o', 'ober'],
     ['u', 'ufat'],
 ];
-
-const taEncript = document.querySelector("#ta-texto-encriptar");
-const msjEncript = document.querySelector("#ta-texto-desencriptado");
 
 /**botones */
 function botonencriptado() {
