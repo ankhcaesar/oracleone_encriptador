@@ -207,9 +207,14 @@ footer {
                                     /*Responsive*/
 
 @media screen and (max-width:768px){
-    .boton-copiar{
-    margin-top: 3em;
+
+.boton-encriptar, .boton-desencriptar, .boton-copiar{
+    width: 8em;
+    padding: 0.5em 0.5em;
+    margin: 0 0.5em;
+    font-size: 14px;
 }
+
 }
 
 @media screen and (max-width:480px){    
@@ -222,7 +227,7 @@ footer {
         width: 90%;
     }
 
-.encriptar, .sndesencriptado, header, footer{
+.encriptar, .sndesencriptado, .desencriptado ,header, footer{
     box-sizing: border-box;
         display: block;
         width: 100%;
