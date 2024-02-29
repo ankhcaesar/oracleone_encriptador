@@ -6,33 +6,33 @@ const matriz = [
     ['u', 'ufat'],
 ];
 
-const noValidos = []
-
 const taEncript = document.querySelector("#ta-texto-encriptar");
 const msjEncript = document.querySelector("#ta-texto-desencriptado");
-
-
-
 
 /**botones */
 function botonencriptado() {
     mostrartextodesencriptado();
-    const texto = encriptar(taEncript.value);
-    msjEncript.value = texto;
-
+    const texto1 = encriptar(taEncript.value);
+    msjEncript.value = texto1;
+    limpiarTa()
 }
 
 function botondesencriptar() {
-    texto = desencriptar(taEncript.value);
-    msjEncript.value = texto;
+    const texto2 = desencriptar(taEncript.value);
+    msjEncript.value = texto2;
 
 }
 
 function botoncopiar() {
     navigator.clipboard.writeText(msjEncript.value);
+    limpiarTa()
 }
 
+
 /** funciones varias */
+function limpiarTa() {
+    document.getElementById("ta-texto-encriptar").value=" "
+}
 
 function encriptar(mensajeDesen) {
     for (let i = 0; i < matriz.length; i++) {
@@ -61,4 +61,8 @@ function desencriptar(mensajeenc) {
 function mostrartextodesencriptado() {
     document.getElementsByClassName("desencriptado")[0].style.display = "inline-block";
     document.getElementsByClassName("sndesencriptado")[0].style.display = "none";
+}
+
+function verifminytilde(elemento) {
+    elemento.value = elemento.value.toLowerCase().replace(/[^a-z]/g,' ');
 }

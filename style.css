@@ -20,7 +20,7 @@ textarea{
     border: none;
     outline: none;
     border-radius: 15px;
-    text-transform: lowercase;
+    
 }
 .encriptar{
     display: inline-block;
