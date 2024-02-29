@@ -114,6 +114,7 @@ textarea {
     background-color: #0a3871;
     color: white;
 }
+
 /* fin ingreso */
 
 /* egreso */
@@ -169,6 +170,7 @@ textarea {
 .botones-copiar {
     padding: 1em;
 }
+
 /*fin egreso*/
 
 /* footer */
@@ -204,6 +206,7 @@ footer {
     padding: 10px;
     border-radius: 10px
 }
+
 /* fin footer*/
 
 
@@ -242,4 +245,5 @@ footer {
         margin-right: auto;
     }
 }
+
 /* Fin responsive */
