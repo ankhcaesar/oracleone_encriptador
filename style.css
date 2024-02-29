@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #EFF1FA;
 }
 
@@ -6,49 +6,51 @@ header {
     text-align: center;
     padding: 5em;
 }
+
 .tituloPrincipal {
     font-family: "Kode Mono", monospace;
     width: 100%;
-    font-weight:700;
+    font-weight: 700;
     font-size: 4em;
     color: #0a3871;
     text-decoration: none;
 }
 
-                                    /* ingreso*/
-textarea{
+/* ingreso*/
+textarea {
     border: none;
     outline: none;
     border-radius: 15px;
-    
 }
-.encriptar{
+
+.encriptar {
     display: inline-block;
     width: 40%;
     text-align: center;
 }
-.texto-encriptar textarea{
+
+.texto-encriptar textarea {
     width: 80%;
     height: 18em;
     padding: 1em 1.5em;
 }
 
-.texto-encriptar textarea:focus, .texto-encriptar textarea:active, .texto-encriptar textarea{
+.texto-encriptar textarea:focus,
+.texto-encriptar textarea:active,
+.texto-encriptar textarea {
     font-size: 20px;
-    color:#0A3871;
+    color: #0A3871;
     background-color: #F3F5FC;
     resize: none;
-    word-break:break-all;
+    word-break: break-all;
 }
-
-
-
 
 .botones-encriptado {
     padding: 1em;
 }
 
-.boton-encriptar, .boton-copiar{
+.boton-encriptar,
+.boton-copiar {
     background-color: #0a3871;
     border: none;
     color: white;
@@ -62,10 +64,10 @@ textarea{
     display: inline-block;
     font-size: 16px;
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.boton-desencriptar{
+.boton-desencriptar {
     background-color: #d8dfe8;
     display: inline-block;
     border: none;
@@ -79,38 +81,43 @@ textarea{
     font-weight: bold;
     font-size: 16px;
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.boton-encriptar:hover,  .boton-desencriptar:hover, .boton-copiar:hover{
+.boton-encriptar:hover,
+.boton-desencriptar:hover,
+.boton-copiar:hover {
     transition: 1s;
     transform: scale(1.1);
 
 }
-.boton-encriptar:not(hover), .boton-desencriptar:not(hover), .boton-copiar:not(hover){
+
+.boton-encriptar:not(hover),
+.boton-desencriptar:not(hover),
+.boton-copiar:not(hover) {
     transition: 1s;
     transform: scale(1);
-    
+
 }
 
-.boton-encriptar:active, .boton-copiar:active{
+.boton-encriptar:active,
+.boton-copiar:active {
     transition: 5ms;
-    box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5);
     background-color: #d8dfe8;
     color: #0a3871;
 }
-.boton-desencriptar:active{
+
+.boton-desencriptar:active {
     transition: 5ms;
-    box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5);
     background-color: #0a3871;
     color: white;
 }
-                                    /* fin ingreso */
+/* fin ingreso */
 
-                                    /* egreso */
-
-/* sin mensaje a ecriptar */
-.sndesencriptado{
+/* egreso */
+.sndesencriptado {
 
     display: inline-block;
     width: 30%;
@@ -123,28 +130,25 @@ textarea{
     width: 50%;
     padding: 3em;
 }
-.sndesencriptado p, .sndesencriptado h1{
+
+.sndesencriptado p,
+.sndesencriptado h1 {
     text-align: center;
     margin: 0 1em 2em
 }
 
-.sndesencriptado h1{
+.sndesencriptado h1 {
     font-size: 2em;
     color: black;
-    }
-
-.msj-sintexto{
-    font-size: 1.5em;
-    color:#495057;
 }
 
-/* fin sin mensaje a encriptar */
+.msj-sintexto {
+    font-size: 1.5em;
+    color: #495057;
+}
 
-/*seccion desencriptado con texto*/
-
-.desencriptado{
+.desencriptado {
     display: none;
-
     width: 30%;
     text-align: center;
 }
@@ -155,19 +159,19 @@ textarea{
     padding: 1em 1.5em;
 }
 
-.texto-desencriptar textarea:focus, .texto-desencriptar textarea:active, .texto-desencriptar textarea{
+.texto-desencriptar textarea:focus,
+.texto-desencriptar textarea:active,
+.texto-desencriptar textarea {
     resize: none;
-    word-break:break-all;
+    word-break: break-all;
 }
 
-
-.botones-copiar{
+.botones-copiar {
     padding: 1em;
 }
+/*fin egreso*/
 
-                                    /*fin egreso*/
-
-                                    /* footer */
+/* footer */
 footer {
     text-align: center;
     padding: 40px;
@@ -200,39 +204,43 @@ footer {
     padding: 10px;
     border-radius: 10px
 }
+/* fin footer*/
 
-                                    /* fin footer*/
 
+/*Responsive*/
+@media screen and (max-width:768px) {
 
-                                    /*Responsive*/
-
-@media screen and (max-width:768px){
-
-.boton-encriptar, .boton-desencriptar, .boton-copiar{
-    width: 8em;
-    padding: 0.5em 0.5em;
-    margin: 0 0.5em;
-    font-size: 14px;
+    .boton-encriptar,
+    .boton-desencriptar,
+    .boton-copiar {
+        width: 8em;
+        padding: 0.5em 0.5em;
+        margin: 0 0.5em;
+        font-size: 14px;
+    }
 }
 
-}
-
-@media screen and (max-width:480px){    
+@media screen and (max-width:480px) {
     header {
         padding: 1em;
     }
-    .tituloPrincipal{
+
+    .tituloPrincipal {
         font-size: 4em;
         font-weight: 700;
         width: 90%;
     }
 
-.encriptar, .sndesencriptado, .desencriptado ,header, footer{
-    box-sizing: border-box;
+    .encriptar,
+    .sndesencriptado,
+    .desencriptado,
+    header,
+    footer {
+        box-sizing: border-box;
         display: block;
         width: 100%;
         margin-left: auto;
-        margin-right: auto; 
+        margin-right: auto;
     }
-
 }
+/* Fin responsive */

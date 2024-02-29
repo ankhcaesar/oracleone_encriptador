@@ -28,10 +28,9 @@ function botoncopiar() {
     limpiarTa()
 }
 
-
 /** funciones varias */
 function limpiarTa() {
-    document.getElementById("ta-texto-encriptar").value=" "
+    document.getElementById("ta-texto-encriptar").value = " "
 }
 
 function encriptar(mensajeDesen) {
@@ -64,5 +63,5 @@ function mostrartextodesencriptado() {
 }
 
 function verifminytilde(elemento) {
-    elemento.value = elemento.value.toLowerCase().replace(/[^a-z]/g,' ');
+    elemento.value = elemento.value.toLowerCase().replace(/[^a-z]/g, ' ');
 }
