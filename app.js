@@ -14,18 +14,19 @@ function botonencriptado() {
     mostrartextodesencriptado();
     const texto1 = encriptar(taEncript.value);
     msjEncript.value = texto1;
-    limpiarTa()
+    limpiarTa();
 }
 
 function botondesencriptar() {
     const texto2 = desencriptar(taEncript.value);
     msjEncript.value = texto2;
+    limpiarTa();
 
 }
 
 function botoncopiar() {
     navigator.clipboard.writeText(msjEncript.value);
-    limpiarTa()
+    limpiarTa();
 }
 
 /** funciones varias */
@@ -46,7 +47,7 @@ function encriptar(mensajeDesen) {
 }
 
 function desencriptar(mensajeenc) {
-    for (let i = 0; i < matriz.length; i++) {
+    for (let i =(matriz.length)-1; i >=0 ; i--) {
         if (mensajeenc.includes(matriz[i][1])) {
             mensajeenc = mensajeenc.replaceAll(
                 matriz[i][1],
