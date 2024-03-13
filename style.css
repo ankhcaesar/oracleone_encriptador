@@ -1,6 +1,7 @@
 body {
 
     background-color: #EFF1FA;
+    background-color: #57bec5;
     width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
@@ -47,6 +48,7 @@ body {
     color: #0a3871;
     text-decoration: none;
 }
+
 /* fin header */
 
 textarea {
@@ -79,18 +81,21 @@ textarea {
 
 /* Caja sin texto*/
 
-.caja-sintexto{    
+.caja-sintexto {
     height: 50vh;
     text-align: center;
-    border-radius: 15px;
     background: white;
 }
-.caja-sintexto img{
-    margin:40px auto 10vw auto;
-}.caja-sintexto p{
+
+.caja-sintexto img {
+    margin: 40px auto 10vw auto;
+}
+
+.caja-sintexto p {
     font-size: 25px;
     font-weight: bold;
 }
+
 /* fin Caja sin texto*/
 
 /* Desencriptar*/
@@ -101,21 +106,21 @@ textarea {
     max-width: 40vw;
 }
 
-.botones-copiar{
+.botones-copiar {
     display: none;
 }
 
-.texto-desencriptar{
+.texto-desencriptar {
     display: none;
 }
+
 .texto-desencriptar textarea:focus,
 .desencriptartextarea:active,
 .texto-desencriptar textarea {
-    width: 20vw;
+    width: 30vw;
     height: 50vh;
     font-size: 20px;
-    
-    }
+}
 
 /* fin desencriptar */
 
@@ -123,8 +128,12 @@ textarea {
 /* BOTONES */
 
 /*caja*/
-.botones-encriptado,
+.botones-encriptado {
+    margin: .5em 0 0;
+    text-align: center;
+}
 .botones-copiar {
+    width: 30vw;
     margin: .5em 0 0;
     text-align: center;
 }
@@ -267,20 +276,26 @@ textarea {
         padding: 0vw;
     }
 
-    .caja-sintexto{ 
-        
+    .caja-sintexto {
+        width: 100vw;
         display: none;
     }
 
-.botones-copiar{
-    width: 100vw;
-    text-align: center;
-}
+    .boton-encriptar{
+        margin: auto auto 5px;
+    }
+
+    .botones-copiar {
+        width: 100vw;
+        text-align: center;
+    }
 
     .caja-encriptar,
     .caja-desencriptar {
         min-width: 100vw;
         max-width: 100vw;
+        text-align: center;
     }
 }
+
 /* fin responsive */
