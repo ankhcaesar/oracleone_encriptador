@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html lang="es-419">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Encriptador de Texto</title>
+    <title>Encriptador de Texto***</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h3 class="tituloPrincipal">Encriptador</h3>
-    </header>
-    <main>
-        <section class="encriptar">
-            <div class="texto-encriptar">
-                <textarea id="ta-texto-encriptar" oninput="verifminytilde(this)"
-                    placeholder="Escribe el texto que quieres encriptar aqui." required></textarea>
-            </div>
 
-            <div class="botones-encriptado">
-                <button class="boton-encriptar" onclick="botonencriptado()">Encriptar</button>
-                <button class="boton-desencriptar" onclick="botondesencriptar()">Desencriptar</button>
-            </div>
-        </section>
+    <div class="logo"><img src="img/Logo1x.png" alt="Logo alura"></div>
+    <div class="tituloP">
+        <h3 class="titulo-principal">Encriptador</h3>
+    </div>
 
-        <section class="desencriptado">
-            <div class="texto-desencriptar">
-                <textarea id="ta-texto-desencriptado">Aqui el texto desencriptado</textarea>
-            </div>
+    <section class="caja-encriptar">
+        <div class="texto-encriptar">
+            <textarea id="ta-texto-encriptar" oninput="verifminytilde(this)"
+                placeholder="Escribe el texto que quieres encriptar aqui." required></textarea>
+        </div>
+        <div class="botones-encriptado">
+            <button class="boton-encriptar" onclick="botonencriptado(this)">Encriptar</button>
+            <button class="boton-desencriptar" onclick="botondesencriptar()">Desencriptar</button>
+        </div>
+    </section>
 
-            <div class="botones-copiar">
-                <button class="boton-copiar" onclick="botoncopiar()">Copiar</button>
-            </div>
 
-        </section>
+    <section class="caja-desencriptar">
+        <div class="texto-desencriptar">
+            <textarea id="ta-texto-desencriptado" placeholder="Ningun mensaje fue encontrado"></textarea>
+        </div>
+        <div class="botones-copiar">
+            <button class="boton-copiar" onclick="botoncopiar()">Copiar</button>
+        </div>
+    </section>
 
-        <section class="sndesencriptado">
-            <p>
-                <img class="imgnigma" src="img/m-quina-enigma-de-alan-turing---width-white-backgr.png" alt="">
-            </p>
-            <h1>Ningun mensaje fue encontrado</h1>
-            <p class="msj-sintexto">Ingresa el texto que deseas encriptar o desencriptar</p>
-        </section>
-    </main>
 
-    <footer>
+    <div class="footer">
         <hr class="separador">
         <img class="logoJconivit" src="img/jconivit.png" alt="logo Julio Cesar Niveyro">
         <p class="nombreJconivit">Julio Cesar Niveyro</p>
         <p class="emailJconivit">juliocesaroniv@gmail.com</p>
-    </footer>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>

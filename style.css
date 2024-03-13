@@ -1,54 +1,112 @@
 body {
+
     background-color: #EFF1FA;
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-areas:
+        "logo tituloP tituloP"
+        "caja-encriptar caja-encriptar caja-desencriptar"
+        "footer footer footer";
 }
 
-header {
-    text-align: center;
-    padding: 5em;
+/*  header */
+.logo,
+.tituloP {
+    justify-self: center;
+    align-self: center;
 }
 
-.tituloPrincipal {
+.logo {
+    grid-area: logo;
+    min-width: 10vw;
+    max-width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    min-width: 10vw;
+    max-width: 25vw;
+    margin-left: 15vw;
+
+}
+
+.tituloP {
+    grid-area: tituloP;
+    min-width: 50vw;
+    max-width: 75vw;
     font-family: "Kode Mono", monospace;
-    width: 100%;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 7vw;
+    margin-right: 20vw;
     color: #0a3871;
     text-decoration: none;
 }
+/* fin header */
 
-/* ingreso*/
 textarea {
     border: none;
     outline: none;
+    resize: none;
     border-radius: 15px;
 }
 
-.encriptar {
-    display: inline-block;
-    width: 40%;
-    text-align: center;
-}
-
-.texto-encriptar textarea {
-    width: 80%;
-    height: 18em;
-    padding: 1em 1.5em;
+/* Encriptar*/
+.caja-encriptar {
+    grid-area: caja-encriptar;
+    margin: 5vw 1vw auto;
+    min-width: 30vw;
+    max-width: 60vw;
 }
 
 .texto-encriptar textarea:focus,
 .texto-encriptar textarea:active,
 .texto-encriptar textarea {
+    width: 50vw;
+    height: 50vh;
     font-size: 20px;
     color: #0A3871;
     background-color: #F3F5FC;
-    resize: none;
     word-break: break-all;
 }
 
-.botones-encriptado {
-    padding: 1em;
+/* Fin encriptar */
+
+
+/* Desencriptar*/
+.caja-desencriptar {
+    grid-area: caja-desencriptar;
+    margin: 5vw 1vw auto;
+    min-width: 20vw;
+    max-width: 40vw;
 }
 
+.texto-desencriptar textarea:focus,
+.desencriptartextarea:active,
+.texto-desencriptar textarea {
+    width: 20vw;
+    height: 50vh;
+    font-size: 20px;
+}
+
+/* fin desencriptar */
+
+
+/* BOTONES */
+
+/*caja*/
+.botones-encriptado,
+.botones-copiar {
+    margin: .5em 0 0;
+    text-align: center;
+}
+
+/*botones*/
 .boton-encriptar,
 .boton-copiar {
     background-color: #0a3871;
@@ -89,7 +147,6 @@ textarea {
 .boton-copiar:hover {
     transition: 1s;
     transform: scale(1.1);
-
 }
 
 .boton-encriptar:not(hover),
@@ -97,7 +154,6 @@ textarea {
 .boton-copiar:not(hover) {
     transition: 1s;
     transform: scale(1);
-
 }
 
 .boton-encriptar:active,
@@ -115,68 +171,17 @@ textarea {
     color: white;
 }
 
-/* fin ingreso */
+/* FIN BOTONES */
 
-/* egreso */
-.sndesencriptado {
 
-    display: inline-block;
-    width: 30%;
-    background-color: #ffffff;
-    border-color: #052051;
-    border-radius: 10px;
-}
-
-.sndesencriptado .imgnigma {
-    width: 50%;
-    padding: 3em;
-}
-
-.sndesencriptado p,
-.sndesencriptado h1 {
+/* INICIO FOOTER */
+.footer {
+    margin: 10px auto;
+    grid-area: footer;
+    min-width: 100vw;
+    justify-self: normal;
     text-align: center;
-    margin: 0 1em 2em
-}
 
-.sndesencriptado h1 {
-    font-size: 2em;
-    color: black;
-}
-
-.msj-sintexto {
-    font-size: 1.5em;
-    color: #495057;
-}
-
-.desencriptado {
-    display: none;
-    width: 30%;
-    text-align: center;
-}
-
-.texto-desencriptar textarea {
-    width: 80%;
-    height: 28em;
-    padding: 1em 1.5em;
-}
-
-.texto-desencriptar textarea:focus,
-.texto-desencriptar textarea:active,
-.texto-desencriptar textarea {
-    resize: none;
-    word-break: break-all;
-}
-
-.botones-copiar {
-    padding: 1em;
-}
-
-/*fin egreso*/
-
-/* footer */
-footer {
-    text-align: center;
-    padding: 40px;
 }
 
 .separador {
@@ -188,7 +193,9 @@ footer {
 
 .logoJconivit {
     margin-top: 1em;
-    width: 100px;
+    min-width: 2vw;
+    max-width: 5vw;
+
 }
 
 .logoJconivit:hover {
@@ -202,54 +209,47 @@ footer {
 }
 
 .nombreJconivit {
-    font-size: 1.5em;
-    padding: 10px;
-    border-radius: 10px
+    font-size: 1em;
+    padding: 5px;
 }
 
-/* fin footer*/
+/* FIN FOOTER */
 
-
-/*Responsive*/
-@media screen and (max-width:768px) {
-
-    .boton-encriptar,
-    .boton-desencriptar,
-    .boton-copiar {
-        width: 8em;
-        padding: 0.5em 0.5em;
-        margin: 0 0.5em;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:480px) {
-    header {
-        padding: 1em;
-    }
-    .tituloPrincipal {
-        font-size: 4em;
-        font-weight: 700;
-        width: 90%;
-    }
-    .encriptar,
-    .sndesencriptado,
-    header,
-    footer {
+/* reponsive */
+@media screen and (max-width:760px) {
+    body {
         box-sizing: border-box;
-        display: block;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100vw;
+        justify-items: normal;
+        grid-template-areas:
+            "logo tituloP"
+            "caja-encriptar caja-encriptar"
+            "caja-desencriptar caja-desencriptar"
+            "footer footer";
     }
-    .desencriptado{
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
+    .texto-encriptar,
+    .texto-desencriptar {
+        text-align: center;
     }
-    .msj-sintexto{
-        display: none;
+
+    .texto-encriptar textarea:focus,
+    .texto-encriptar textarea:active,
+    .texto-encriptar textarea,
+    .texto-desencriptar textarea:focus,
+    .texto-desencriptar textarea:active,
+    .texto-desencriptar textarea {
+        width: 90vw;
+        height: 45vw;
+        padding: 0vw;
+
+    }
+
+    .caja-encriptar,
+    .caja-desencriptar {
+        min-width: 100vw;
+        max-width: 100vw;
     }
 }
-/* Fin responsive */
+
+/* fin responsive */

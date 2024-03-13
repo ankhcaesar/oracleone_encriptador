@@ -11,7 +11,7 @@ const matriz = [
 
 /**botones */
 function botonencriptado() {
-    mostrartextodesencriptado();
+    /*mostrartextodesencriptado(); sistema viejo*/
     const texto1 = encriptar(taEncript.value);
     msjEncript.value = texto1;
     limpiarTa();
@@ -31,7 +31,7 @@ function botoncopiar() {
 
 /** funciones varias */
 function limpiarTa() {
-    document.getElementById("ta-texto-encriptar").value = " "
+    document.getElementById("ta-texto-encriptar").value = ""
 }
 
 function encriptar(mensajeDesen) {
