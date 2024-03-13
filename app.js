@@ -11,7 +11,7 @@ const matriz = [
 
 /**botones */
 function botonencriptado() {
-    /*mostrartextodesencriptado(); sistema viejo*/
+    mostrartextodesencriptado();
     const texto1 = encriptar(taEncript.value);
     msjEncript.value = texto1;
     limpiarTa();
@@ -47,7 +47,7 @@ function encriptar(mensajeDesen) {
 }
 
 function desencriptar(mensajeenc) {
-    for (let i =(matriz.length)-1; i >=0 ; i--) {
+    for (let i = (matriz.length) - 1; i >= 0; i--) {
         if (mensajeenc.includes(matriz[i][1])) {
             mensajeenc = mensajeenc.replaceAll(
                 matriz[i][1],
@@ -59,8 +59,9 @@ function desencriptar(mensajeenc) {
 }
 
 function mostrartextodesencriptado() {
-    document.getElementsByClassName("desencriptado")[0].style.display = "inline-block";
-    document.getElementsByClassName("sndesencriptado")[0].style.display = "none";
+    document.getElementsByClassName("texto-desencriptar")[0].style.display = "inline-block";
+    document.getElementsByClassName("botones-copiar")[0].style.display = "inline-block";
+    document.getElementsByClassName("caja-sintexto")[0].style.display = "none";
 }
 
 function verifminytilde(elemento) {
